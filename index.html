@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="banner">
+            <h1>To-Do List</h1>
+        </header>
+
+        <!-- Task Input Section -->
+        <main class="container">
+            <div class="input-row">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+                <input type="text" id="taskInput" placeholder="Enter task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <p id="validationMessage" class="validation-message"></p>
+
+            <div id="taskList"></div>
+        </main>
+
+        <script src="script/script.js"></script>
+    </body>
+</html>
